@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
+  <meta name="description" content="SakuraBot - is just a Discord bot that you need." />
+  <meta name="keywords" content="Sakura, SakuraBot, SakuraBot, bot, discord, discord bot, discord.js, discord.js bot, discord.js bot example, jarvis" />
+  <meta name="author" content="jarvis" />
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/751900090624376852/32fbc156cfce04d324f1915bbb3b1dad.png?size=2048">
+
+  <title>SakuraBot | Commands</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/commands.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="/materialize.css">
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+  
+<body>
+
+  <div class="navbar-fixed">
+    <nav class="z-depth-2" role="navigation" style="background: rgba(0, 0, 0, 0.8);">
+      <div class="nav-wrapper container">
+        <a href="/" class="left valign-wrapper hide-on-med-and-down" style="height: 100%;">
+          <img style="height: 80%;" src="https://cdn.discordapp.com/avatars/751900090624376852/32fbc156cfce04d324f1915bbb3b1dad.png?size=2048">
+        </a>
+        <a href="/" class="right hide-on-large-only valign-wrapper" style="height: 100%;">
+          <img style="height: 80%;" src="https://cdn.discordapp.com/avatars/751900090624376852/32fbc156cfce04d324f1915bbb3b1dad.png?size=2048">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="/" class="f waves-effect waves-light white-text">Home</a>
+            <!--<a href="/about" class="f waves-effect waves-light white-text">About</a>-->
+            <a href="/commands" class="f waves-effect waves-light white-text" style="font-weight: 900 !important; box-shadow: 0px -4px 0 -1px #fff inset !important;">Commands</a>
+            <a href="https://discord.gg/w42gM7M" class="f waves-effect waves-light white-text" target="_blank">Support</a>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot', 'newwindow', 'width=500,height=800'); return false;" class="waves-effect waves-light btn-flat white-text center" style="border-style: solid; border-width: 2px; border-radius: 5px; border-color: white;">INVITE</a>
+          </li>
+        </ul>
+
+        <a href="" data-target="nav-mobile" class="sidenav-trigger left">
+          <i class="material-icons white-text">menu</i>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <ul id="nav-mobile" class="sidenav black-gradient">
+    <li>
+      <a href="/" class="f waves-effect waves-light white-text">Home</a>
+      <!--<a href="/about" class="f waves-effect waves-light white-text">About</a>-->
+      <a href="/commands" class="f waves-effect waves-light white-text" style="font-weight: 900 !important; box-shadow: 4px 0px 0 -1px #fff inset !important;">Commands</a>
+      <a href="https://discord.gg/w42gM7M" target="_blank" class="f waves-effect waves-light white-text">Support</a>
+      <a href="https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot', 'newwindow', 'width=500,height=800'); return false;" class="waves-effect waves-light btn-flat white-text center" style="border-style: solid; border-width: 2px; border-radius: 5px; border-color: white;">INVITE</a>
+    </li>
+  </ul>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col l2 hide-on-med-and-down tabs-v" style="height: calc(100vh - 84px);">
+        
+        <div class="tabs-v">
+          <button class="tablinks" onclick="openCity(event, 'p1')">Public</button>
+          <button class="tablinks" onclick="openCity(event, 'p2')">Soon</button>
+          <button class="tablinks" onclick="openCity(event, 'p3')">Games</button>
+        </div>
+        
+      </div>
+
+      <div class="col s12 m12 hide-on-large-only">
+        <ul class="tabs transparent">
+           <button class="tablinks" onclick="openCity(event, 'p1')">Public</button>
+          <button class="tablinks" onclick="openCity(event, 'p2')">Soon</button>
+          <button class="tablinks" onclick="openCity(event, 'p3')">Games</button>
+        </ul>
+      </div>
+
+      <!-- Info -->
+      <div id="p1" class="tabcontent active">
+
+        <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$help</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$user</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$avatar</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$invite</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$server</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        
+         <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$ping</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+         <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$bot</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+     
+        
+         <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$roll</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+         <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$count</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+
+
+      <!-- Moderation -->
+      <div id="p2" class="tabcontent">
+
+      <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$ban</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$unban</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$kick</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+
+      
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$mute/unmute</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+  
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$say</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$lock/unlock</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$clear</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$role</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      
+      
+       <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$setLog</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+      
+      
+                          </div>
+
+      
+      <!-- Automation -->
+      <div id="p3" class="tabcontent">
+
+  <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$cuttweet</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+          <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$honest</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+          <div class="col s12 m12 l5">
+          <div class="card grey darken-4 z-depth-3">
+            <div class="card-content white-text">
+              <div class="card-title red-text"><span>$kill</span></div>
+              <span class="white-text">
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+
+</body>
+
+</html>
+
