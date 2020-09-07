@@ -1,0 +1,93 @@
+body {
+  background: #111;
+  color: #fff;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#nav-mobile li>a.f::before {
+    background-color: #fff;
+    left: 0px;
+    width: 3px;
+    height: 100%;
+    transform: scaleY(0);
+}
+
+.drag-target {
+  width: 32px !important;
+}
+
+ul li>a.f::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform .2s, background-color .2s;
+}
+
+ul li>a.f:hover::before {
+    transform: scaleX(1)
+}
+
+ul li>a.f:focus::before {
+    transform: scaleX(1)
+}
+
+#nav-mobile li>a.f:hover::before {
+    transform: scaleY(1)
+}
+
+::selection {
+  background: rgba(80, 80, 80, 0.5);
+  /* Safari */
+}
+
+::-moz-selection {
+  background: rgba(80, 80, 80, 0.5);
+  /* Firefox */
+}
+
+.black-gradient {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)) !important;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.tabs-v {
+  height: 100%;
+  width: 100%;
+}
+
+.tablinks {
+  display: block;
+  background-color: inherit;
+  color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tablinks:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Create an active/current "tab button" class */
+.tablinks.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
