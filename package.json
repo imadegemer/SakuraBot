@@ -1,0 +1,29 @@
+{
+  "name": "expobot",
+  "version": "0.0.1",
+  "description": "expoBot website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "dblapi.js": "^2.2.0",
+    "discord.js": "^11.4.2",
+    "do-slide": "^1.1.4",
+    "express": "^4.16.3",
+    "node-fetch": "^2.2.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/expobot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
