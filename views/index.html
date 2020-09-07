@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
+  <meta name="description" content="SakuraBot - the worlds best moderation bot for your server by Bubble Bots." />
+  <meta name="keywords" content="Sakura, SakuraBot, SakuraBot, bot, discord, discord bot, discord.js, discord.js bot, discord.js bot example, jarvis" />
+  <meta name="author" content="jarvis" />
+  <link rel="shortcut icon" href="https://images-ext-1.discordapp.net/external/d33OiJiMf7tWwEtlj9luul2RJgm4iI17HpNqC3JEDyA/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/751900090624376852/32fbc156cfce04d324f1915bbb3b1dad.png?width=427&height=427">
+
+  <title>SakuraBot | Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css" />
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<style>
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #111;
+    color: white;
+  }
+  
+</style>
+
+<body>
+
+  <!-- Global full div -->
+  <div class="full hidden">
+
+    <div class="navbar-fixed">
+      <nav class="blackFade z-depth-1" role="navigation">
+        <div class="nav-wrapper container">
+          <!-- Icons -->
+          <a href="/" class="left valign-wrapper hide-on-med-and-down" style="height: 100%;">
+            <img style="height: 80%;" src="https://cdn.discordapp.com/avatars/751900090624376852/32fbc156cfce04d324f1915bbb3b1dad.png?size=2048">
+          </a>
+          <a href="/" class="right hide-on-large-only valign-wrapper animated fadeIn" style="height: 100%;">
+            <img style="height: 80%;" src="https://cdn.discordapp.com/avatars/751900090624376852/32fbc156cfce04d324f1915bbb3b1dad.png?size=2048">
+          </a>
+
+          <!-- Nav -->
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="/" class="f waves-effect waves-light white-text" style="font-weight: 900; box-shadow: 0 -4px 0 -1px #fff inset;">Home</a>
+              <a href="/commands" class="f waves-effect waves-light white-text">Commands</a>
+              <a href="https://discord.gg/w42gM7M" target="_blank" class="f waves-effect waves-light white-text">Support</a>
+              <a href="https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot', 'newwindow', 'width=500,height=800'); return false;" class="waves-effect waves-light btn-flat white-text center" style="border-style: solid; border-width: 2px; border-radius: 5px; border-color: white;">INVITE</a>
+            </li>
+          </ul>
+
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger left animated fadeIn">
+            <i class="material-icons white-text">menu</i>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!-- particles.js container -->
+    <div id="particles-js" class="animated fadeIn">
+    </div>
+    <!-- Nav-mobile -->
+    <ul id="nav-mobile" class="sidenav black-gradient z-depth-0">
+      <li>
+        <a href="/" class="f waves-effect waves-light white-text" style="font-weight: 900; box-shadow: 4px 0px 0 -1px #fff inset;">Home</a>
+        <a href="/commands" class="f waves-effect waves-light white-text">Commands</a>
+        <a href="https://discord.gg/w42gM7M" target="_blank" class="f waves-effect waves-light white-text">Support</a>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot', 'newwindow', 'width=500,height=800'); return false;" class="waves-effect waves-light btn-flat white-text center" style="border-style: solid; border-width: 2px; border-radius: 5px; border-color: white;">INVITE</a>
+      </li>
+    </ul>
+
+    <!-- Pages -->
+    <div class="fullpage">
+      
+      <!-- Section 1 | Intro -->
+      <div class="header-wrapper section" style="background: transparent">
+        <div class="txt">
+          <h2 class="center white-text animated fadeInUp">SakuraBot</h2>
+          <p class="center white-text animated fadeInUp">bot that you need</p>
+          <a href="https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=751900090624376852&permissions=8&scope=bot', 'newwindow', 'width=500,height=800'); return false;" class="animated fadeInUp waves-effect waves-light btn-flat white-text center" style="border-style: solid; border-width: 2px; border-radius: 5px; border-color: white;">INVITE</a>
+        </div>
+      </div>
+      
+      <!-- Section 2 | Management -->
+      <div class="row section">
+        <div class="col s12 m6 valign-wrapper" style="height: 100%; color: black;">
+          <div class="container">
+            <h1 class="center" style="font-weight: 600;">Description</h1>
+            <p class="flow-text">ساكورا بوت - بوت اداري خارق و ايضا مختلف عن البوتات الثانية</p>
+            <p class="flow-text">فيه اوامر كثيرة منها امبد -- هذا وصف قصير للبوت و اتمنا انكم تستعملوه و تستمتعوا معاه</p>
+          </div>
+        </div>
+        <div class="col s12 m6 valign-wrapper center" style="height: 100%; color: black;">
+          <div class="container">
+            <img class="responsive-img bouncing" src="https://media.discordapp.net/attachments/719225319374061639/752516404929888396/unknown.png" style="margin-right: 50px; animation-delay: 0.75s;">
+            <img class="responsive-img bouncing" src="https://media.discordapp.net/attachments/719225319374061639/752516545242071141/unknown.png" style="margin-right: -100px;">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Section 3 | About -->
+      <div class="row section">
+        <div class="col s12 m6 valign-wrapper" style="height: 100%; float: left; color: white;">
+          <div class="container">
+            <h1 class="center" style="font-weight: 600;">JOIN DISCORD</h1>
+          </div>
+        </div>
+        <div class="col s12 m6 valign-wrapper" style="height: 100%; float: right; color: white;">
+          <div class="container">
+            <h1 class="center">About</h1>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- Pages div end -->
+
+  </div> <!-- Full div end -->
+
+  <script src="particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="scriptParticles.js"></script>
+
+</body>
+
+</html>
